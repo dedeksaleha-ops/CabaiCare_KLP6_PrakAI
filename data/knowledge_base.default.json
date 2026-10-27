@@ -1,0 +1,859 @@
+{
+  "meta": {
+    "judul": "Basis Pengetahuan Pemupukan Cabai",
+    "versi": "3.0",
+    "catatan": "Gejala dan penanganan memakai sumber khusus cabai atau paprika (Capsicum annuum). Nilai CF adalah estimasi perancang dan perlu validasi pakar."
+  },
+  "sources": {
+    "S1": {
+      "ref": "Qur'ania, A., Karlitasari, L., Maryana, S., Sudrajat, C., & Zolla (2023). Identifikasi Defisiensi Unsur Hara pada Tanaman Cabai Menggunakan Support Vector Machine. J-ICON, 11(1), 62-67. DOI: 10.35508/jicon.v11i1.9803",
+      "url": "https://ejurnal.undana.ac.id/index.php/jicon/article/download/9803/4913",
+      "tanaman": "cabai",
+      "verifikasi": "Diverifikasi dengan membaca dokumen asli pada 26 Okt 2026. Teks lengkap dibaca.",
+      "didukung": "Kekurangan N pada cabai: klorosis seragam pada daun tua, daun makin cerah hingga kuning. Kekurangan P: daun hijau lebih gelap hingga kebiru-biruan. Kekurangan hara umum: tanaman kerdil.",
+      "batasan": "Makalah klasifikasi citra (SVM), tidak memuat gejala K, Ca, Mg dan tidak memuat dosis."
+    },
+    "S2": {
+      "ref": "Silva, A.Z., Wamser, A.F., Nowaki, R.H., Cecilio Filho, A.B., & Mendoza-Cortez, J.W. (2017). Symptoms of Macronutrients Deficiency in Sweet Pepper (Capsicum annuum L.). Agrociencia Uruguay, 21(2), 31-43. DOI: 10.31285/AGRO.21.2.5",
+      "url": "https://agrocienciauruguay.uy/index.php/agrociencia/article/view/155",
+      "tanaman": "paprika (Capsicum annuum, spesies sama dengan cabai merah)",
+      "verifikasi": "Diverifikasi dengan membaca dokumen asli pada 26 Okt 2026. Teks lengkap (PDF berbahasa Spanyol) dibaca.",
+      "didukung": "Percobaan hidroponik pada paprika. N: tanaman kehilangan warna hijau, bunga gugur, titik tumbuh berhenti, buah pucat dan matang dini. P: daun hijau gelap, nervasi sisi bawah ungu, bunga gugur, daun muda menggulung. K: klorosis dan nekrosis tepi daun (mulai daun muda), lalu nekrosis di antara tulang daun. Ca: hanya busuk ujung buah. Mg: klorosis di antara tulang daun pada daun bagian tengah, menjalar ke daun tua. Urutan munculnya gejala: N, Ca, P, K, Mg. Gejala visual saja tidak cukup untuk diagnosis pasti.",
+      "batasan": "Paprika di sistem hidroponik, bukan cabai di lahan. Letak gejala K dan Mg berbeda antar peneliti (dibahas di makalah)."
+    },
+    "S3": {
+      "ref": "KAU Agri-Infotech Portal, Centre for e-Learning, Kerala Agricultural University. Chilli (Capsicum annuum L.): Nutrient Deficiency. (Halaman web; penulis individu tidak tercantum.)",
+      "url": "https://celkau.in/crops/vegetables/chilli/deficiency.php",
+      "tanaman": "cabai (Capsicum annuum)",
+      "verifikasi": "Diverifikasi dengan membaca dokumen asli pada 26 Okt 2026. Halaman web dibaca penuh.",
+      "didukung": "Gejala dan penanganan per hara pada cabai. N: daun tua pucat, kuning seragam termasuk urat, kerdil, buah kecil. P: daun tua, ungu pada batang, tangkai dan sisi bawah daun, pembungaan dan pematangan tertunda. K: daun tua, nekrosis tepi, nekrosis antar tulang daun, daun keriting. Ca: daun muda, titik tumbuh mati, busuk ujung buah, daun menggulung ke atas; P tinggi dapat memicu defisiensi Ca. Mg: daun yang baru mencapai ukuran penuh, klorosis antar tulang daun, daun gugur dini; dolomit jangka panjang; pupuk Mg dan K jangan diberikan bersamaan. Fe: daun muda memucat antar tulang daun; K rendah memicu defisiensi Fe. Analisis tanah untuk memastikan.",
+      "batasan": "Portal penyuluhan India; penulis dan tahun tidak tercantum. Dosis spesifik (per cent/acre) tidak dipakai di sini."
+    },
+    "S4": {
+      "ref": "BALITSA & JIRCAS. Penggunaan Pupuk yang Tepat untuk Produksi Sayuran (leaflet). Tabel dosis bersumber dari Suwandi (2011). Tahun terbit leaflet tidak tercantum (berkas diunggah 2020).",
+      "url": "https://www.jircas.go.jp/sites/default/files/2020/20200910.pdf",
+      "tanaman": "sayuran, ada baris 'Cabai Monokultur'",
+      "verifikasi": "Diverifikasi dengan membaca dokumen asli pada 26 Okt 2026. Teks lengkap dibaca.",
+      "didukung": "Dosis standar baris 'Cabai Monokultur' 150-150-150 kg N-P2O5-K2O/ha (113-96-120 adalah baris tomat/kubis). Pupuk organik sekitar 20 t/ha per musim tanam. Kadar hara: Urea 46% N, ZA 21% N, SP-36 36% P2O5, TSP 43% P2O5, KCl 60% K2O. Rumus pupuk = dosis x luas / (kadar/100).",
+      "batasan": "Dosis umum, bukan berbasis uji tanah. Kolom tabel dibaca dari hasil ekstraksi teks PDF; cocokkan sekali lagi dengan tampilan aslinya."
+    },
+    "S5": {
+      "ref": "Soetiarso, T.A., Ameriana, M., Prabaningrum, L., & Sumarni, N. (2006). Pertumbuhan, Hasil, dan Kelayakan Finansial Penggunaan Mulsa dan Pupuk Buatan pada Usahatani Cabai Merah di Luar Musim. Jurnal Hortikultura, 16(1), 63-76. Balai Penelitian Tanaman Sayuran, Lembang.",
+      "url": "https://kmc-pengairan.bappenas.go.id/knowledge-management/download/287",
+      "tanaman": "cabai merah",
+      "verifikasi": "Diverifikasi dengan membaca dokumen asli pada 26 Okt 2026. Teks lengkap dibaca.",
+      "didukung": "Rekomendasi lahan tegalan: pupuk kandang 20-30 t/ha, TSP 100-150, Urea 100-150, ZA 300-400, KCl 150-200 kg/ha. Percobaan: 150-150-150 kg N-P2O5-K2O/ha menghasilkan hasil tinggi dan paling menguntungkan; 225 tidak berbeda nyata; 300 tidak menguntungkan. Jadwal: pupuk dasar (pupuk kandang 30 t/ha dan seluruh P) 1 minggu sebelum tanam; N dan K susulan masing-masing 1/3 dosis pada 1, 5, dan 9 minggu setelah tanam.",
+      "batasan": "Satu lokasi (andosol Lembang, 1.250 m dpl) pada musim hujan. Hasil di tanah dan iklim lain (mis. Aceh) bisa berbeda."
+    },
+    "S6": {
+      "ref": "Pusat Penelitian dan Pengembangan Hortikultura, Kementerian Pertanian (2014). Standar Operasional Prosedur (SOP) Budidaya Cabe Merah. Jakarta. (Disusun berdasarkan pengalaman petani di Ciamis dan rekomendasi Balitsa dan BPTP Jawa Barat.)",
+      "url": "https://gaphortikultura.puslithorti.net/wp-content/uploads/2018/12/SOP-Cabai-Merah-2014.pdf",
+      "tanaman": "cabai merah",
+      "verifikasi": "Diverifikasi dengan membaca dokumen asli pada 26 Okt 2026. Seluruh dokumen dibaca.",
+      "didukung": "pH tanah sesuai 6-7; bila pH di bawah 6 beri kaptan/dolomit 1-2 t/ha. Pupuk dasar: kompos 15-20 t/ha sekitar 2 minggu sebelum tanam; Urea 300, ZA 150, SP-36 600, KCl 300 kg/ha 5 hari sebelum tanam (atau NPK majemuk 500-700 kg/ha). Pupuk N dan K susulan mulai 21 hari setelah tanam, lalu tiap 7-10 hari. Dosis sebaiknya berdasarkan analisis tanah dan daun. Dolomit meningkatkan Ca dan Mg tanah. Masa kritis air: pertumbuhan vegetatif cepat, pembungaan, pembuahan. Pemupukan berimbang (bagian pengendalian virus): Urea 150-200, ZA 450-500, TSP 100-150, KCl 100-150 kg/ha dan pupuk kandang 20-30 t/ha.",
+      "batasan": "Dosis di dokumen ini jauh lebih tinggi dan tidak sama dengan S4/S5; SOP sendiri menyatakan dosis harus disesuaikan rekomendasi spesifik lokasi. Tidak memuat gejala defisiensi."
+    },
+    "S7": {
+      "ref": "Hochmuth, G.J. & Hochmuth, R.C. (2025). Blossom-End Rot in Bell Pepper: Causes and Prevention. UF/IFAS Extension, SL 284 / SS497. University of Florida.",
+      "url": "https://edis.ifas.ufl.edu/publication/ss497",
+      "tanaman": "paprika (Capsicum annuum)",
+      "verifikasi": "Diverifikasi dengan membaca dokumen asli pada 26 Okt 2026. Teks lengkap dibaca.",
+      "didukung": "Busuk ujung buah (BER) adalah kekurangan Ca pada jaringan buah muda: bercak cekung hijau muda/kuning yang melebar lalu menghitam. Pemicu: N berlebih (pertumbuhan daun dan cabang berlebihan menarik Ca ke daun), garam tinggi, stres air, akar rusak. Pencegahan: irigasi merata dan N tidak berlebih; ketahui Ca tanah dan air. Semprot Ca lewat daun kemungkinan besar tidak memperbaiki atau mencegah BER.",
+      "batasan": "Konteks Florida dan paprika; tidak memuat dosis pupuk cabai Indonesia."
+    }
+  },
+  "facts": {
+    "G01": {
+      "name": "Daun tua (bagian bawah) menguning merata, urat daun ikut menguning",
+      "category": "Daun",
+      "askable": true
+    },
+    "G02": {
+      "name": "Pertumbuhan tanaman kerdil atau lambat",
+      "category": "Seluruh tanaman",
+      "askable": true
+    },
+    "G03": {
+      "name": "Seluruh tanaman tampak hijau pucat",
+      "category": "Seluruh tanaman",
+      "askable": true
+    },
+    "G04": {
+      "name": "Daun hijau lebih gelap, kebiruan",
+      "category": "Daun",
+      "askable": true
+    },
+    "G05": {
+      "name": "Warna ungu pada nervasi sisi bawah daun, tangkai daun, atau batang",
+      "category": "Daun",
+      "askable": true
+    },
+    "G06": {
+      "name": "Pembungaan atau pematangan tertunda dan perakaran lemah",
+      "category": "Seluruh tanaman",
+      "askable": true
+    },
+    "G07": {
+      "name": "Tepi atau ujung daun menguning lalu cokelat dan mengering (seperti terbakar)",
+      "category": "Daun",
+      "askable": true
+    },
+    "G08": {
+      "name": "Jaringan di antara tulang daun mati atau bercak cokelat",
+      "category": "Daun",
+      "askable": true
+    },
+    "G09": {
+      "name": "Buah kecil, pucat, atau bentuknya tidak normal",
+      "category": "Buah",
+      "askable": true
+    },
+    "G10": {
+      "name": "Ujung buah (sisi dasar bunga) membusuk: bercak cekung yang lalu menghitam",
+      "category": "Buah",
+      "askable": true
+    },
+    "G11": {
+      "name": "Daun muda keriting, kecil atau cacat, atau titik tumbuh terhambat",
+      "category": "Daun",
+      "askable": true
+    },
+    "G12": {
+      "name": "Bunga atau kuncup mudah rontok",
+      "category": "Bunga dan buah",
+      "askable": true
+    },
+    "G13": {
+      "name": "Daun bagian tengah atau bawah menguning di antara tulang daun, tulang daun tetap hijau",
+      "category": "Daun",
+      "askable": true
+    },
+    "G14": {
+      "name": "Tanaman sangat rimbun, daun dan cabang tumbuh berlebihan",
+      "category": "Seluruh tanaman",
+      "askable": true
+    },
+    "G16": {
+      "name": "Daun gugur lebih awal atau muncul bercak mati",
+      "category": "Daun",
+      "askable": true
+    },
+    "G17": {
+      "name": "Daun muda (pucuk) pucat hingga memutih di antara tulang daun, tulang daun tetap hijau",
+      "category": "Daun",
+      "askable": true
+    },
+    "FASE_VEG": {
+      "name": "Tanaman berada pada fase vegetatif",
+      "category": "Konteks",
+      "askable": true
+    },
+    "FASE_GEN": {
+      "name": "Tanaman berada pada fase generatif (berbunga atau berbuah)",
+      "category": "Konteks",
+      "askable": true
+    }
+  },
+  "conclusions": {
+    "def_N": {
+      "name": "Kekurangan Nitrogen (N)",
+      "tipe": "diagnosis",
+      "deskripsi": "Daun tua pucat hingga kuning merata (urat ikut kuning), tanaman kerdil dan kurang bercabang; pada kekurangan berat bunga gugur dan buah kecil serta pucat.",
+      "penyebab": "Pasokan N kurang; N gampang bergerak sehingga gejala muncul dulu di daun tua.",
+      "penanganan": "Beri N susulan sesuai tabel dosis (Urea 46% N). Pastikan tingkat kekurangan lewat analisis tanah.",
+      "sources": [
+        "S1",
+        "S2",
+        "S3",
+        "S4"
+      ]
+    },
+    "def_P": {
+      "name": "Kekurangan Fosfor (P)",
+      "tipe": "diagnosis",
+      "deskripsi": "Daun hijau lebih gelap hingga kebiruan; nervasi sisi bawah daun, tangkai dan batang berwarna ungu; perakaran lemah; pembungaan dan pematangan tertunda; bunga gugur.",
+      "penyebab": "Pasokan P kurang. Pada pH 6,2-7,0 P mudah diserap akar (S3).",
+      "penanganan": "Beri P (SP-36, 36% P2O5). Pada jadwal S5 seluruh P diberikan sebagai pupuk dasar; P susulan di sini adalah penyesuaian heuristik. Periksa pH tanah.",
+      "sources": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ]
+    },
+    "def_K": {
+      "name": "Kekurangan Kalium (K)",
+      "tipe": "diagnosis",
+      "deskripsi": "Tepi atau ujung daun menguning lalu cokelat kering, jaringan di antara tulang daun mati, daun keriting, tanaman kerdil.",
+      "penyebab": "Pasokan K kurang. Pada pH di atas 6 K lebih tersedia (S3).",
+      "penanganan": "Beri K (KCl, 60% K2O) bertahap sesuai uji tanah. Pupuk K dan Mg jangan diberikan bersamaan.",
+      "sources": [
+        "S2",
+        "S3",
+        "S4"
+      ]
+    },
+    "def_Ca": {
+      "name": "Kekurangan Kalsium (Ca) / Busuk Ujung Buah",
+      "tipe": "diagnosis",
+      "deskripsi": "Bercak cekung di ujung buah (dekat dasar bunga) yang melebar lalu menghitam. Pada cabai juga dilaporkan daun muda cacat dan titik tumbuh mati.",
+      "penyebab": "Ca sulit sampai ke buah: stres air, N berlebih yang memacu daun, garam tinggi, akar rusak, atau Ca tanah kurang; P tinggi dapat memicu kekurangan Ca.",
+      "penanganan": "Jaga irigasi merata, jangan berlebih N, jaga akar sehat, periksa Ca tanah. Semprot Ca lewat daun kemungkinan besar tidak memperbaiki BER (S7).",
+      "sources": [
+        "S2",
+        "S3",
+        "S7"
+      ]
+    },
+    "def_Mg": {
+      "name": "Kekurangan Magnesium (Mg)",
+      "tipe": "diagnosis",
+      "deskripsi": "Menguning di antara tulang daun sementara tulang daun tetap hijau, mulai dari daun bagian tengah atau bawah; bisa disertai bercak mati, daun gugur dini, dan hasil turun.",
+      "penyebab": "Mg tanah rendah. Pupuk K berlebih dapat menghambat serapan Mg.",
+      "penanganan": "Pastikan dengan analisis tanah. Dolomit (Ca dan Mg) jangka panjang; pupuk K dan Mg jangan diberikan bersamaan.",
+      "sources": [
+        "S2",
+        "S3",
+        "S6"
+      ]
+    },
+    "def_Fe": {
+      "name": "Kekurangan Besi (Fe)",
+      "tipe": "diagnosis",
+      "deskripsi": "Daun muda memucat hingga memutih di antara tulang daun, tulang daun tetap hijau (pola jaring); gejalanya mirip kekurangan Mn.",
+      "penyebab": "K rendah dapat memicu kekurangan Fe; tanah di beberapa daerah sudah tinggi Fe.",
+      "penanganan": "Lakukan uji tanah dahulu untuk memastikan penyebabnya sebelum memberi sumber Fe.",
+      "sources": [
+        "S3"
+      ]
+    },
+    "exc_N": {
+      "name": "Kelebihan Nitrogen (N)",
+      "tipe": "diagnosis",
+      "deskripsi": "Tanaman sangat rimbun dengan daun dan cabang berlebihan; kondisi ini membuat Ca lebih banyak ke daun sehingga buah berisiko busuk ujung.",
+      "penyebab": "N tinggi dari pupuk kimia maupun pupuk kandang berlebih.",
+      "penanganan": "Kurangi N dan atur irigasi merata.",
+      "sources": [
+        "S7"
+      ]
+    },
+    "saran_N_vegetatif": {
+      "name": "Saran: pastikan N cukup pada fase vegetatif",
+      "tipe": "saran",
+      "deskripsi": "N susulan dimulai sekitar 21 hari setelah tanam (S6) atau pada 1, 5, 9 minggu setelah tanam (S5).",
+      "penyebab": "",
+      "penanganan": "Beri N susulan sesuai tabel dosis dan jadwal.",
+      "sources": [
+        "S3",
+        "S5",
+        "S6"
+      ]
+    },
+    "saran_N_generatif": {
+      "name": "Saran: N secukupnya pada fase generatif",
+      "tipe": "saran",
+      "deskripsi": "Kekurangan N saat berbuah membuat bunga gugur (S2), tetapi N berlebih memacu daun dan menyulitkan Ca sampai ke buah (S7).",
+      "penyebab": "",
+      "penanganan": "Beri N sesuai tabel dosis, jangan melebihi.",
+      "sources": [
+        "S2",
+        "S7"
+      ]
+    },
+    "saran_K_generatif": {
+      "name": "Saran: pastikan K cukup pada fase generatif",
+      "tipe": "saran",
+      "deskripsi": "K susulan tetap diberikan sesuai jadwal selama berbuah.",
+      "penyebab": "",
+      "penanganan": "Beri K bertahap sesuai tabel dosis; jangan berlebihan karena mengganggu serapan Mg.",
+      "sources": [
+        "S3",
+        "S5",
+        "S6"
+      ]
+    },
+    "saran_K_vegetatif": {
+      "name": "Saran: pastikan K cukup pada fase vegetatif",
+      "tipe": "saran",
+      "deskripsi": "K susulan mulai sekitar 21 hari setelah tanam (S6) atau 1, 5, 9 minggu setelah tanam (S5).",
+      "penyebab": "",
+      "penanganan": "Beri K bertahap sesuai tabel dosis.",
+      "sources": [
+        "S3",
+        "S5",
+        "S6"
+      ]
+    },
+    "saran_P_vegetatif": {
+      "name": "Saran: beri P sebagai pupuk dasar",
+      "tipe": "saran",
+      "deskripsi": "Pada percobaan S5 seluruh P diberikan sebagai pupuk dasar 1 minggu sebelum tanam.",
+      "penyebab": "",
+      "penanganan": "Pastikan pupuk dasar P sudah diberikan; bila belum atau gejala jelas, beri P sesuai tabel dosis.",
+      "sources": [
+        "S3",
+        "S5"
+      ]
+    },
+    "saran_P_generatif": {
+      "name": "Saran: tambahkan P pada fase generatif",
+      "tipe": "saran",
+      "deskripsi": "Kekurangan P membuat pembungaan dan pematangan tertunda.",
+      "penyebab": "",
+      "penanganan": "Beri P susulan sesuai tabel dosis (penyesuaian heuristik) dan periksa pH tanah.",
+      "sources": [
+        "S3",
+        "S5"
+      ]
+    },
+    "saran_Ca": {
+      "name": "Saran: atasi penyebab busuk ujung buah",
+      "tipe": "saran",
+      "deskripsi": "BER terutama soal pengiriman Ca ke buah, bukan sekadar kurang pupuk Ca.",
+      "penyebab": "",
+      "penanganan": "Jaga irigasi merata siang dan malam, hindari N berlebih, jaga akar sehat. Periksa Ca tanah; bila pH di bawah 6 beri dolomit 1-2 t/ha (S6). Semprot Ca lewat daun kemungkinan besar tidak memperbaiki BER (S7).",
+      "sources": [
+        "S6",
+        "S7"
+      ]
+    },
+    "saran_Mg": {
+      "name": "Saran: penuhi magnesium",
+      "tipe": "saran",
+      "deskripsi": "Mg adalah bagian penting klorofil.",
+      "penyebab": "",
+      "penanganan": "Konfirmasi dengan analisis tanah. Dolomit (mengandung Ca dan Mg) bila pH rendah; jangan memberi pupuk K dan Mg bersamaan (S3, S6).",
+      "sources": [
+        "S3",
+        "S6"
+      ]
+    },
+    "saran_Fe": {
+      "name": "Saran: periksa penyebab kekurangan besi",
+      "tipe": "saran",
+      "deskripsi": "Gejala daun muda memucat bisa juga akibat kekurangan Mn.",
+      "penyebab": "",
+      "penanganan": "Lakukan uji tanah, periksa kecukupan K, dan konfirmasi dengan penyuluh sebelum memberi sumber Fe (S3).",
+      "sources": [
+        "S3"
+      ]
+    },
+    "saran_kurangi_N": {
+      "name": "Saran: kurangi nitrogen",
+      "tipe": "saran",
+      "deskripsi": "N berlebih memacu daun dan cabang berlebihan.",
+      "penyebab": "",
+      "penanganan": "Tahan atau kurangi N pada aplikasi berikutnya dan atur irigasi merata.",
+      "sources": [
+        "S7"
+      ]
+    },
+    "saran_kurangi_N_atur_air": {
+      "name": "Saran: kurangi N dan atur irigasi",
+      "tipe": "saran",
+      "deskripsi": "N berlebih dan stres air adalah dua pemicu utama busuk ujung buah.",
+      "penyebab": "",
+      "penanganan": "Kurangi N, jaga kelembapan tanah merata, dan jaga akar sehat.",
+      "sources": [
+        "S7"
+      ]
+    }
+  },
+  "conflicts": [
+    [
+      "G01",
+      "G14"
+    ],
+    [
+      "G02",
+      "G14"
+    ]
+  ],
+  "rules": [
+    {
+      "id": "R01",
+      "antecedents": [
+        "G01"
+      ],
+      "consequent": "def_N",
+      "cf": 0.7,
+      "kind": "faktual",
+      "sources": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "note": ""
+    },
+    {
+      "id": "R02",
+      "antecedents": [
+        "G01",
+        "G02"
+      ],
+      "consequent": "def_N",
+      "cf": 0.85,
+      "kind": "faktual",
+      "sources": [
+        "S1",
+        "S3"
+      ],
+      "note": ""
+    },
+    {
+      "id": "R03",
+      "antecedents": [
+        "G03"
+      ],
+      "consequent": "def_N",
+      "cf": 0.5,
+      "kind": "faktual",
+      "sources": [
+        "S2",
+        "S3"
+      ],
+      "note": "Pucat menyeluruh juga bisa dari hara lain; CF sedang."
+    },
+    {
+      "id": "R04",
+      "antecedents": [
+        "G01",
+        "G12"
+      ],
+      "consequent": "def_N",
+      "cf": 0.8,
+      "kind": "faktual",
+      "sources": [
+        "S2"
+      ],
+      "note": "Pada kekurangan N berat bunga gugur."
+    },
+    {
+      "id": "R05",
+      "antecedents": [
+        "G01",
+        "G09"
+      ],
+      "consequent": "def_N",
+      "cf": 0.8,
+      "kind": "faktual",
+      "sources": [
+        "S3"
+      ],
+      "note": "Buah kecil dan pucat pada kekurangan N."
+    },
+    {
+      "id": "R06",
+      "antecedents": [
+        "G04"
+      ],
+      "consequent": "def_P",
+      "cf": 0.6,
+      "kind": "faktual",
+      "sources": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "note": ""
+    },
+    {
+      "id": "R07",
+      "antecedents": [
+        "G04",
+        "G05"
+      ],
+      "consequent": "def_P",
+      "cf": 0.85,
+      "kind": "faktual",
+      "sources": [
+        "S2",
+        "S3"
+      ],
+      "note": ""
+    },
+    {
+      "id": "R08",
+      "antecedents": [
+        "G04",
+        "G06"
+      ],
+      "consequent": "def_P",
+      "cf": 0.8,
+      "kind": "faktual",
+      "sources": [
+        "S3"
+      ],
+      "note": ""
+    },
+    {
+      "id": "R09",
+      "antecedents": [
+        "G04",
+        "G12"
+      ],
+      "consequent": "def_P",
+      "cf": 0.75,
+      "kind": "faktual",
+      "sources": [
+        "S2"
+      ],
+      "note": ""
+    },
+    {
+      "id": "R10",
+      "antecedents": [
+        "G07"
+      ],
+      "consequent": "def_K",
+      "cf": 0.65,
+      "kind": "faktual",
+      "sources": [
+        "S2",
+        "S3"
+      ],
+      "note": ""
+    },
+    {
+      "id": "R11",
+      "antecedents": [
+        "G07",
+        "G08"
+      ],
+      "consequent": "def_K",
+      "cf": 0.85,
+      "kind": "faktual",
+      "sources": [
+        "S2",
+        "S3"
+      ],
+      "note": ""
+    },
+    {
+      "id": "R12",
+      "antecedents": [
+        "G07",
+        "G11"
+      ],
+      "consequent": "def_K",
+      "cf": 0.75,
+      "kind": "heuristik",
+      "sources": [
+        "S3"
+      ],
+      "note": "Gabungan tepi daun terbakar dan daun keriting (keduanya gejala K pada S3)."
+    },
+    {
+      "id": "R13",
+      "antecedents": [
+        "G10"
+      ],
+      "consequent": "def_Ca",
+      "cf": 0.85,
+      "kind": "faktual",
+      "sources": [
+        "S2",
+        "S3",
+        "S7"
+      ],
+      "note": ""
+    },
+    {
+      "id": "R14",
+      "antecedents": [
+        "G10",
+        "G11"
+      ],
+      "consequent": "def_Ca",
+      "cf": 0.9,
+      "kind": "faktual",
+      "sources": [
+        "S3",
+        "S7"
+      ],
+      "note": ""
+    },
+    {
+      "id": "R15",
+      "antecedents": [
+        "G11"
+      ],
+      "consequent": "def_Ca",
+      "cf": 0.4,
+      "kind": "heuristik",
+      "sources": [
+        "S3"
+      ],
+      "note": "Pucuk cacat juga bisa dari kekurangan K atau B; pada S2 tidak muncul."
+    },
+    {
+      "id": "R16",
+      "antecedents": [
+        "G13"
+      ],
+      "consequent": "def_Mg",
+      "cf": 0.8,
+      "kind": "faktual",
+      "sources": [
+        "S2",
+        "S3"
+      ],
+      "note": ""
+    },
+    {
+      "id": "R17",
+      "antecedents": [
+        "G13",
+        "G16"
+      ],
+      "consequent": "def_Mg",
+      "cf": 0.85,
+      "kind": "faktual",
+      "sources": [
+        "S3"
+      ],
+      "note": ""
+    },
+    {
+      "id": "R18",
+      "antecedents": [
+        "G17"
+      ],
+      "consequent": "def_Fe",
+      "cf": 0.65,
+      "kind": "faktual",
+      "sources": [
+        "S3"
+      ],
+      "note": "Mirip kekurangan Mn; konfirmasi dengan uji tanah."
+    },
+    {
+      "id": "R19",
+      "antecedents": [
+        "G14"
+      ],
+      "consequent": "exc_N",
+      "cf": 0.55,
+      "kind": "faktual",
+      "sources": [
+        "S7"
+      ],
+      "note": ""
+    },
+    {
+      "id": "R20",
+      "antecedents": [
+        "G14",
+        "G10"
+      ],
+      "consequent": "exc_N",
+      "cf": 0.75,
+      "kind": "faktual",
+      "sources": [
+        "S7"
+      ],
+      "note": "N berlebih memicu busuk ujung buah."
+    },
+    {
+      "id": "R21",
+      "antecedents": [
+        "exc_N",
+        "def_Ca"
+      ],
+      "consequent": "saran_kurangi_N_atur_air",
+      "cf": 0.85,
+      "kind": "faktual",
+      "sources": [
+        "S7"
+      ],
+      "note": ""
+    },
+    {
+      "id": "R22",
+      "antecedents": [
+        "def_N",
+        "FASE_VEG"
+      ],
+      "consequent": "saran_N_vegetatif",
+      "cf": 0.9,
+      "kind": "heuristik",
+      "sources": [
+        "S3",
+        "S5",
+        "S6"
+      ],
+      "note": ""
+    },
+    {
+      "id": "R23",
+      "antecedents": [
+        "def_N",
+        "FASE_GEN"
+      ],
+      "consequent": "saran_N_generatif",
+      "cf": 0.75,
+      "kind": "heuristik",
+      "sources": [
+        "S2",
+        "S7"
+      ],
+      "note": ""
+    },
+    {
+      "id": "R24",
+      "antecedents": [
+        "def_K",
+        "FASE_GEN"
+      ],
+      "consequent": "saran_K_generatif",
+      "cf": 0.85,
+      "kind": "heuristik",
+      "sources": [
+        "S3",
+        "S5",
+        "S6"
+      ],
+      "note": ""
+    },
+    {
+      "id": "R25",
+      "antecedents": [
+        "def_K",
+        "FASE_VEG"
+      ],
+      "consequent": "saran_K_vegetatif",
+      "cf": 0.75,
+      "kind": "heuristik",
+      "sources": [
+        "S3",
+        "S5",
+        "S6"
+      ],
+      "note": ""
+    },
+    {
+      "id": "R26",
+      "antecedents": [
+        "def_P",
+        "FASE_VEG"
+      ],
+      "consequent": "saran_P_vegetatif",
+      "cf": 0.85,
+      "kind": "heuristik",
+      "sources": [
+        "S3",
+        "S5"
+      ],
+      "note": ""
+    },
+    {
+      "id": "R27",
+      "antecedents": [
+        "def_P",
+        "FASE_GEN"
+      ],
+      "consequent": "saran_P_generatif",
+      "cf": 0.75,
+      "kind": "heuristik",
+      "sources": [
+        "S3",
+        "S5"
+      ],
+      "note": ""
+    },
+    {
+      "id": "R28",
+      "antecedents": [
+        "def_Ca"
+      ],
+      "consequent": "saran_Ca",
+      "cf": 0.85,
+      "kind": "faktual",
+      "sources": [
+        "S6",
+        "S7"
+      ],
+      "note": ""
+    },
+    {
+      "id": "R29",
+      "antecedents": [
+        "def_Mg"
+      ],
+      "consequent": "saran_Mg",
+      "cf": 0.85,
+      "kind": "faktual",
+      "sources": [
+        "S3",
+        "S6"
+      ],
+      "note": ""
+    },
+    {
+      "id": "R30",
+      "antecedents": [
+        "exc_N"
+      ],
+      "consequent": "saran_kurangi_N",
+      "cf": 0.85,
+      "kind": "faktual",
+      "sources": [
+        "S7"
+      ],
+      "note": ""
+    },
+    {
+      "id": "R31",
+      "antecedents": [
+        "def_Fe"
+      ],
+      "consequent": "saran_Fe",
+      "cf": 0.7,
+      "kind": "faktual",
+      "sources": [
+        "S3"
+      ],
+      "note": ""
+    }
+  ],
+  "dose": {
+    "dasar_musiman_per_ha": {
+      "N": 150,
+      "P2O5": 150,
+      "K2O": 150
+    },
+    "sumber_dasar": [
+      "S4",
+      "S5"
+    ],
+    "pupuk_kandang_t_per_ha": "20-30",
+    "porsi_pupuk_dasar": {
+      "N": 0.0,
+      "P2O5": 1.0,
+      "K2O": 0.0
+    },
+    "jumlah_susulan": 3,
+    "batas_atas_musiman": 225,
+    "catatan_jadwal": "Jadwal mengikuti percobaan S5: pupuk dasar (pupuk kandang dan seluruh P) 1 minggu sebelum tanam; N dan K susulan masing-masing 1/3 dosis pada 1, 5, dan 9 minggu setelah tanam. SOP S6 menyarankan N dan K susulan mulai 21 hari setelah tanam lalu tiap 7-10 hari; pilih salah satu sesuai anjuran penyuluh setempat.",
+    "faktor_defisiensi": 1.25,
+    "faktor_kelebihan_N": 0.5,
+    "cf_minimum_penyesuaian": 0.5,
+    "catatan_faktor": "HEURISTIK perancang (bukan angka literatur): dosis susulan hara yang defisien dikali 1,25 dan dosis N dikali 0,5 bila kelebihan N. S5 hanya menunjukkan dosis di atas 225 kg/ha per hara tidak memberi tambahan hasil atau keuntungan.",
+    "pembanding": "Angka dosis berbeda antar sumber: S5 menyarankan Urea 100-150, TSP 100-150, KCl 150-200 kg/ha; SOP S6 untuk pupuk dasar menyebut Urea 300, ZA 150, SP-36 600, KCl 300 kg/ha. S6 sendiri menyatakan dosis sebaiknya berdasarkan analisis tanah dan daun, jadi anggap tabel ini sebagai acuan awal.",
+    "produk": {
+      "N": {
+        "nama": "Urea (46% N)",
+        "kadar": 0.46
+      },
+      "P2O5": {
+        "nama": "SP-36 (36% P2O5)",
+        "kadar": 0.36
+      },
+      "K2O": {
+        "nama": "KCl (60% K2O)",
+        "kadar": 0.6
+      }
+    }
+  }
+}
