@@ -15,6 +15,5 @@ def render(kb):
         st.markdown(f"**{sid}.** {s['ref']}")
         if s["url"]:
             st.markdown(f"[{s['url']}]({s['url']})")
-        st.caption("Tanaman: " + s["tanaman"] + ". Status: " + s["verifikasi"])
         st.markdown("**Dipakai untuk:** " + s["didukung"])
         st.markdown("**Batasan:** " + s["batasan"])

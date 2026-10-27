@@ -22,20 +22,20 @@
       "batasan": "Paprika di sistem hidroponik, bukan cabai di lahan. Letak gejala K dan Mg berbeda antar peneliti (dibahas di makalah)."
     },
     "S3": {
-      "ref": "KAU Agri-Infotech Portal, Centre for e-Learning, Kerala Agricultural University. Chilli (Capsicum annuum L.): Nutrient Deficiency. (Halaman web; penulis individu tidak tercantum.)",
+      "ref": "KAU Agri-Infotech Portal, Centre for e-Learning, Kerala Agricultural University. Chilli (Capsicum annuum L.): Nutrient Deficiency.",
       "url": "https://celkau.in/crops/vegetables/chilli/deficiency.php",
       "tanaman": "cabai (Capsicum annuum)",
       "verifikasi": "Diverifikasi dengan membaca dokumen asli pada 26 Okt 2026. Halaman web dibaca penuh.",
       "didukung": "Gejala dan penanganan per hara pada cabai. N: daun tua pucat, kuning seragam termasuk urat, kerdil, buah kecil. P: daun tua, ungu pada batang, tangkai dan sisi bawah daun, pembungaan dan pematangan tertunda. K: daun tua, nekrosis tepi, nekrosis antar tulang daun, daun keriting. Ca: daun muda, titik tumbuh mati, busuk ujung buah, daun menggulung ke atas; P tinggi dapat memicu defisiensi Ca. Mg: daun yang baru mencapai ukuran penuh, klorosis antar tulang daun, daun gugur dini; dolomit jangka panjang; pupuk Mg dan K jangan diberikan bersamaan. Fe: daun muda memucat antar tulang daun; K rendah memicu defisiensi Fe. Analisis tanah untuk memastikan.",
-      "batasan": "Portal penyuluhan India; penulis dan tahun tidak tercantum. Dosis spesifik (per cent/acre) tidak dipakai di sini."
+      "batasan": "Portal penyuluhan India. Dosis spesifik (per cent/acre) tidak dipakai di sini."
     },
     "S4": {
-      "ref": "BALITSA & JIRCAS. Penggunaan Pupuk yang Tepat untuk Produksi Sayuran (leaflet). Tabel dosis bersumber dari Suwandi (2011). Tahun terbit leaflet tidak tercantum (berkas diunggah 2020).",
+      "ref": "BALITSA & JIRCAS. Penggunaan Pupuk yang Tepat untuk Produksi Sayuran (leaflet). Tabel dosis bersumber dari Suwandi (2011).",
       "url": "https://www.jircas.go.jp/sites/default/files/2020/20200910.pdf",
       "tanaman": "sayuran, ada baris 'Cabai Monokultur'",
       "verifikasi": "Diverifikasi dengan membaca dokumen asli pada 26 Okt 2026. Teks lengkap dibaca.",
       "didukung": "Dosis standar baris 'Cabai Monokultur' 150-150-150 kg N-P2O5-K2O/ha (113-96-120 adalah baris tomat/kubis). Pupuk organik sekitar 20 t/ha per musim tanam. Kadar hara: Urea 46% N, ZA 21% N, SP-36 36% P2O5, TSP 43% P2O5, KCl 60% K2O. Rumus pupuk = dosis x luas / (kadar/100).",
-      "batasan": "Dosis umum, bukan berbasis uji tanah. Kolom tabel dibaca dari hasil ekstraksi teks PDF; cocokkan sekali lagi dengan tampilan aslinya."
+      "batasan": "Dosis umum, bukan berbasis uji tanah."
     },
     "S5": {
       "ref": "Soetiarso, T.A., Ameriana, M., Prabaningrum, L., & Sumarni, N. (2006). Pertumbuhan, Hasil, dan Kelayakan Finansial Penggunaan Mulsa dan Pupuk Buatan pada Usahatani Cabai Merah di Luar Musim. Jurnal Hortikultura, 16(1), 63-76. Balai Penelitian Tanaman Sayuran, Lembang.",
